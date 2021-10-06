@@ -1,0 +1,206 @@
+body{
+    margin: 0;;
+    padding: 0;
+    overflow: hidden;
+
+}
+section{
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgb(122, 187, 230),rgb(89, 197, 247));
+    overflow: hidden;
+    position: absolute;
+}
+.set{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.set div{
+    position: absolute;
+    display: inline-block;
+}
+
+.set div:nth-child(1) img{
+    animation: rot 12s linear infinite;
+    width: 5%;
+    animation-delay: -7s;
+
+}
+.set div:nth-child(2) img{
+    animation: rot 15s linear infinite;
+    animation-delay: -5s;
+    
+    width: 14%;
+
+}
+.set div:nth-child(3) img{
+    animation: rot 18s linear infinite;
+    
+    width: 30%;
+
+}
+.set div:nth-child(4) img{
+    animation: rot 25s linear infinite;
+    animation-delay: -5s;
+    
+width: 16%;
+}
+.set div:nth-child(5) img{
+    animation: rot 10s linear infinite;
+    
+    width: 42%;
+    animation-delay: -10s;
+
+}
+.set div:nth-child(6) img{
+    animation: rot 14s linear infinite;
+    
+    width: 25%;
+
+}
+.set div:nth-child(7) img{
+    animation: rot 20s linear infinite;
+    
+    width: 18%;
+
+}
+.set div:nth-child(8) img{
+    animation: rot 17s linear infinite;
+    
+    width: 130%;
+
+}
+.set div:nth-child(1){
+    left: 0%;
+    animation: animate 12s linear infinite;
+    animation-delay: -7s;
+}
+.set div:nth-child(2){
+    left: 20%;
+    animation: animate 15s linear infinite;
+    animation-delay: -5s;
+}
+.set div:nth-child(3){
+    left: 70%;
+    animation: animate 18s linear infinite;
+
+}
+.set div:nth-child(4){
+    left: 8%;
+    animation: animate 25s linear infinite;
+    animation-delay: -5s;
+
+}
+.set div:nth-child(5){
+    left: 85%;
+    animation: animate 10s linear infinite;
+    animation-delay: -10s;
+
+}
+.set div:nth-child(6){
+    left: 56%;
+    animation: animate 14s linear infinite;
+
+}
+.set div:nth-child(7){
+    left: 45%;
+    animation: animate 20s linear infinite;
+
+}
+.set div:nth-child(8){
+    left: 90%;
+    animation: animate 17s linear infinite;
+
+}
+@keyframes animate{
+    0%{
+        top: -10%;
+        
+        transform: translateX(20px) ;
+        /* rotate(0deg) */
+    }
+    10%{
+        opacity: 1;
+    }
+    20%{
+        transform: translateX(-20px) ;
+        /* rotate(45deg) */
+    }
+
+    40%{
+        transform: translateX(-20px) ;
+        /* rotate(90deg) */
+    }
+    60%{
+        transform: translateX(20px) ;
+        /* rotate(135deg) */
+
+    }
+    80%{
+        transform: translateX(-20px);
+        /* rotate(180deg) */
+    }
+    100%{
+        top: 110%;
+        transform: translateX(-20px) ;
+        /* rotate(225deg) */
+    }
+}
+@keyframes rot{
+    0%{
+        opacity: 1;
+        transform:rotate(0deg);
+    }
+    10%{
+        opacity: 1;
+    }
+    20%{
+        transform: rotate(72deg);
+    }
+
+    40%{
+        transform: rotate(144deg);
+    }
+    60%{
+        transform:rotate(216deg);
+
+    }
+    80%{
+        transform:rotate(288deg);
+    }
+    100%{
+       
+        transform: rotate(360deg);
+    }
+}
+
+.set2{
+    filter:blur(2px);
+    transform: scale(2) rotateY(180deg);
+}
+.set2 div img{
+    /* transform:  */
+
+}
+.set3 div img{
+    /* transform:  rotateX(180deg); */
+}
+.set3{
+    filter:blur(4px);
+    transform:scale(0.8) rotateX(180deg);
+}
+h2{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 8em;
+    transform: translateY(-50%);
+}
